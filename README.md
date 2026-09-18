@@ -15,7 +15,7 @@ An autonomous, production-grade smart campus energy management service built for
 
 - **Track:** GridWise — Smart Campus Energy Optimizer
 - **Event:** BUP CSE Fest 2026 Hackathon (Online Preliminary)
-- **Live Service URL:** `https://<your-service-name>.onrender.com` *(Update with deployed Render URL)*
+- **Live Service URL:** [https://gridwise-bup-2026-tmj7.onrender.com](https://gridwise-bup-2026-tmj7.onrender.com)
 - **GitHub Repository:** [https://github.com/azmirisultana/gridwise-bup-2026](https://github.com/azmirisultana/gridwise-bup-2026)
 - **3-Minute Demo Video:** [Watch Solution Architecture & Demo Video](https://youtu.be/placeholder) *(Update with unlisted YouTube / Drive link)*
 
