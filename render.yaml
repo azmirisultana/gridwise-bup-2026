@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: gridwise-bup-2026
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-3.5-flash-lite
+      - key: PORT
+        value: 8000
+      - key: HOST
+        value: 0.0.0.0
