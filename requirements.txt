@@ -1,0 +1,7 @@
+fastapi>=0.115.0
+uvicorn>=0.34.0
+pydantic>=2.10.0
+pulp>=2.9.0
+google-genai>=2.3.0
+requests>=2.32.0
+python-dotenv>=1.0.0
