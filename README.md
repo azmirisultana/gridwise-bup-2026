@@ -9,6 +9,13 @@ An autonomous, production-grade backend service built for the **BUP CSE Fest 202
 
 ---
 
+## 🎥 3-Minute Architecture & Demo Video
+
+> **Demo Video Link**: [Watch Solution Architecture & Testing Video](https://youtu.be/placeholder)  
+> *(Please replace with your unlisted YouTube or Google Drive video URL before submitting)*
+
+---
+
 ## 1. System Architecture
 
 The service strictly implements the multi-stage pipeline mandated by the problem specification:
@@ -302,7 +309,8 @@ curl -X POST http://localhost:8000/optimize-energy \
 - [x] `GET /health` responds with `{"status": "ok"}` within milliseconds.
 - [x] `POST /optimize-energy` accepts 1-3 operator notes and returns valid structured output.
 - [x] Interpretation coverage: Exactly one entry per note in `note_index` order (0..N-1).
-- [x] Guardrails active: Validates hours (unique, ascending 0..23), clamps factors, bounds battery reserves.
+- [x] Strict validation active: Validates hours (unique, ascending 0..23), rejects out-of-bounds factors, strictly checks battery reserves.
+- [x] Independent plan validator: Replays all physical and directive constraints against returned schedule.
 - [x] LP Optimizer respects all physical constraints: hourly balance, battery limits, rates, EOD neutrality.
 - [x] Public sample test suite: All 10 sample scenarios pass within 0.01 BDT tolerance.
 - [x] Dockerfile containerizes application cleanly without baked-in secrets.
